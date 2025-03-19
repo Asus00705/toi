@@ -387,12 +387,19 @@ a.navbar-item:hover {
   padding-bottom: 10px;
 }
 .parent-container {
+  justify-content: center; /* Поднимаем текст на Android */
+  min-height: 80vh; /* Даем больше места */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Отправляет блоки вниз */
-  height: 50vh; /* Полноэкранная высота */
 }
+.nama-lengkap, .father {
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
 .nama-lengkap {
   font-family: 'Rouge Script', sans-serif;
   color: #996E6D;
@@ -404,7 +411,7 @@ a.navbar-item:hover {
   }
 
 .father {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 .ampersand {
